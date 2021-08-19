@@ -30,4 +30,4 @@ app = create_app()
 if __name__ == "__main__":  # 실행되는 파일이 이 파일일 경우
     uvicorn.run("main:app", host="127.0.0.1", port=8080, reload=True)  # conf().PROJ_RELOAD 환경에 따라 다른 PROJ_RELOAD를 쓴다.
 
-# 후에 서버로 올릴 때는 도커로 빌드를 해서 올릴 것임.
+# 후에 서버로 올릴 때는 도커로 빌드를 해서 올릴 것임
