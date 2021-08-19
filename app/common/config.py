@@ -18,6 +18,7 @@ class Config: # 기본 Configuration
 @dataclass
 class LocalConfig(Config):
     PROJ_RELOAD:bool=True
+    DB_URL: str = "mysql+pymysql://root@localhost/fastapi_db?charset=utf8mb4"
 
 @dataclass
 class ProdConfig(Config):
